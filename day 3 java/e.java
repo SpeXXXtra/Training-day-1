@@ -1,13 +1,24 @@
-public enum OrderStatus {
-    PENDING,
-    SHIPPED,
-    DELIVERED,
-    CANCELLED
+import java.time.LocalDate;
+import java.util.Scanner;
+enum Day{
+    MONADAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
 }
-public class e {
+
+public class e{
     public static void main(String[] args) {
-        // Assigning an enum constant
-        OrderStatus currentStatus = OrderStatus.PENDING;
-        System.out.println("Current Status: " + currentStatus); 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the date: ");
+
+        LocalDate date = LocalDate.parse(sc.nextLine());
+        LocalDate billDate = date.plusDays(30);
+    
+
+
     }
 }

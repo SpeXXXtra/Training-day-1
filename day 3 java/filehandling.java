@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.Writer;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class filehandling {
     public static void main(String[] args){
@@ -18,6 +19,11 @@ public class filehandling {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+        try {
+            FileWriter fw = new FileWriter("names.txt",false);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
