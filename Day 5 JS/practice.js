@@ -57,8 +57,77 @@ const fruits = ["apple", "banana", "orange", "mango", "grapes"];
 // fruits.sort(); //sorts the array in ascending order
 // console.log(`After sort ${fruits}`)//After sort
 
-console.log(fruits.at(-1));//gives the last element of the array
-console.log(fruits.includes("apple"));//check if arrah has apple as a value
-console.log(fruits.indexOf("banana"));//gives the index of the value in the array
-console.log(fruits.join(" - "));//joins the array elements with the given string
-console.log(fruits.includes("kiwi"));//check if arrah has kiwi as a value
+// console.log(fruits.at(-1));//gives the last element of the array
+// console.log(fruits.includes("apple"));//check if arrah has apple as a value
+// console.log(fruits.indexOf("banana"));//gives the index of the value in the array
+// console.log(fruits.join(" - "));//joins the array elements with the given string
+// console.log(fruits.includes("kiwi"));//check if arrah has kiwi as a value
+
+// const obj1 = {
+//     name:"Nihal Sulthan",
+//     age:18,
+//     address:{
+//         city:"Kozhikode",
+//         state:"Kerala",
+//         country:"India"
+//     },
+//     languages:["English","Hindi","Malayalam"],
+//     greet:function(){
+//         console.log("da da poda");
+//     }
+
+// }
+
+// console.log(obj1.name);//accessing the name property of the object
+// console.log(obj1.age);
+// console.log(obj1.address.city);//accessing the city property of the address object
+// console.log(obj1.languages[0]);
+
+// console.log(Object.keys(obj1));//gives the keys of the object
+// console.log(Object.values(obj1));
+// console.log(Object.entries(obj1));//gives the key value pairs of the object in an array
+
+// const arr = [1,2,3,4,5];
+
+// for(const ele of arr){
+//     console.log(ele);//this will give the elements of the array
+// }
+
+// for (const index in arr){
+//     console.log(index);//this will give the index of the array
+// }
+
+// function outter(){
+//     console.log("Hello im the outter function being run from the inner function!");
+// }
+
+// function inner(func){
+//     console.log("Hello im the inner function!");
+//     func()
+// }
+
+// function greet(name,func){
+//     console.log(`Hello ${name}`);
+//     let done = false;
+//     setTimeout(()=>{
+//         done = func(name);
+//     },2000);
+
+//     console.log(`${name} please wait while the greetings are in order!`);
+//     if(done){
+//         console.log("greetings done!");
+//     }
+
+// }
+
+// function greetings(name){
+//     console.log(`Greetings ${name}`);
+// }
+
+// greet("Nihal",greetings)
+
+const a = (a,b) =>{
+    return a+b;
+}
+
+console.log(a(5,10))
